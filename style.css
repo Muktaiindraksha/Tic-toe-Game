@@ -1,0 +1,80 @@
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-image: url(istockphoto-1406147022-640x640.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.container {
+    text-align: center;
+}
+
+/* Title Styling */
+h1 {
+    color: #f9efef;
+    margin-bottom: 20px;
+}
+
+/* Game Board Styling */
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+    background-color: #fcf8f8;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cell:hover {
+    transform: scale(1.1);
+}
+
+/* Winner Text Styling */
+.winner-text {
+    font-size: 20px;
+    color: #f7f1f1;
+    margin-bottom: 15px;
+}
+
+/* Reset Button Styling */
+.reset-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6b6b7b;;
+    color:white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.reset-btn:hover {
+    background-color: rgb(33, 32, 32);
+}
